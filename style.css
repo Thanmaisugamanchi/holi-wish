@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(
+        to bottom right,
+        yellow,
+        pink,
+        #D8BFD8, /* Light purple (thistle) */
+        green,
+        red
+    );
+    background-size: 200% 200%;
+    animation: gradientAnimation 15s ease infinite;
+    background-position: 50% 50%; /* Start in the middle */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#name-input-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+}
+
+#nameInput {
+    padding: 8px;
+    margin: 10px 0;
+}
